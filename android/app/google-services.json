@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "623398803390",
+    "project_id": "flutter-e-learning-anotherkaby",
+    "storage_bucket": "flutter-e-learning-anotherkaby.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:623398803390:android:744925f21efe9f5f310bef",
+        "android_client_info": {
+          "package_name": "com.anotherkaby.e_learning"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "623398803390-utfpjs9aol0oeammslb20pa6clmu0rvs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.anotherkaby.e_learning",
+            "certificate_hash": "0cde56de9d45a0a161069426910e4086e14727cb"
+          }
+        },
+        {
+          "client_id": "623398803390-fen63s6ishppld7d5ip37chpmusp8run.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAiX0HhV-7ucXtOEqfWuNkR8W2eiSB82Ts"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "623398803390-fen63s6ishppld7d5ip37chpmusp8run.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
