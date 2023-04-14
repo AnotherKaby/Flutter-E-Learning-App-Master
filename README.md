@@ -20,7 +20,7 @@
 - `get: ^4.6.5` => https://pub.dev/packages/get
 - `google_fonts: ^4.0.3` => https://pub.dev/packages/google_fonts
 - `firebase_core: ^2.9.0` => https://pub.dev/packages/firebase_core
-- `firebase_auth: ^4.4.0` => firebase_auth
+- `firebase_auth: ^4.4.0` => https://pub.dev/packages/firebase_auth
 - `google_sign_in: ^6.0.2` => https://pub.dev/packages/google_sign_in
 - `dio: ^5.1.1` => https://pub.dev/packages/dio
 - `form_builder_validators: ^8.4.0` => https://pub.dev/packages/form_builder_validators

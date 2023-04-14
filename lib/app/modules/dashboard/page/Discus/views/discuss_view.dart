@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_e_learning_app_master/app/data/models/user_model.dart';
 import 'package:flutter_e_learning_app_master/app/modules/dashboard/page/Discus/controllers/discuss_controller.dart';
+import 'package:flutter_e_learning_app_master/app/routes/app_pages.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -18,6 +19,12 @@ class DiscussView extends GetView<DiscussController> {
       backgroundColor: ColorPallete.bgColorWhite,
       appBar: AppBar(
         backgroundColor: ColorPallete.bgColor,
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back),
+          onPressed: () {
+            Get.offAllNamed(Routes.dashboard, arguments: controller.userData);
+          },
+        ),
         title: Text(
           'Diskusi Soal',
           style:

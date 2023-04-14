@@ -28,8 +28,10 @@ class DashboardView extends GetView<DashboardController> {
               padding: EdgeInsets.only(top: 10),
                 child: Image.asset('assets/icon/discuss_ic.png',width: 35)),
             onPressed: () {
-              Get.offAllNamed(Routes.discuss, arguments: UserModel());
+              //Get.offAllNamed(Routes.discuss, arguments: UserModel());
+              Get.offAllNamed(Routes.discuss, arguments: controller.userData);
               //Navigator.push(context,MaterialPageRoute(builder: (context) => DiscussView()),);
+              //Navigator.push(context,MaterialPageRoute(builder: (context) => Routes.discuss),);
             },
           ),
           floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
