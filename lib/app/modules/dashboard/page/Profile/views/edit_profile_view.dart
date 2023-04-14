@@ -13,7 +13,7 @@ class EditProfileView extends GetView<ProfileController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: ColorPallete.bgColorWhite,
+      backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: ColorPallete.bgColor,
         title: Text(

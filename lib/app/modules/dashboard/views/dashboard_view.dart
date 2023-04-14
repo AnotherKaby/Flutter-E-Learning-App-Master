@@ -1,6 +1,9 @@
 // ignore_for_file: prefer_const_constructors
 
+import 'dart:math';
+
 import 'package:flutter/material.dart';
+import 'package:flutter_e_learning_app_master/app/data/models/user_model.dart';
 import 'package:get/get.dart';
 import 'package:flutter_e_learning_app_master/app/modules/dashboard/page/Home/views/home_view.dart';
 import 'package:flutter_e_learning_app_master/app/modules/dashboard/page/Profile/views/profile_view.dart';
@@ -24,8 +27,10 @@ class DashboardView extends GetView<DashboardController> {
             child: Container(
               padding: EdgeInsets.only(top: 10),
                 child: Image.asset('assets/icon/discuss_ic.png',width: 35)),
-            onPressed: () => Navigator.push(context,MaterialPageRoute(builder: (context) => DiscussView()),
-            ),
+            onPressed: () {
+              Get.offAllNamed(Routes.discuss, arguments: UserModel());
+              //Navigator.push(context,MaterialPageRoute(builder: (context) => DiscussView()),);
+            },
           ),
           floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
           bottomNavigationBar: BottomNavigationBar(
@@ -52,5 +57,6 @@ class DashboardView extends GetView<DashboardController> {
   List<Widget> _bodyList() => [
         const HomeView(),
         const ProfileView(),
+        //const DiscussView(),
       ];
 }

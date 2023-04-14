@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_e_learning_app_master/app/data/models/user_model.dart';
 import 'package:flutter_e_learning_app_master/app/modules/dashboard/page/Discus/controllers/discuss_controller.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
@@ -11,7 +12,6 @@ import '../../../../../widget/chat_shimmer.dart';
 
 class DiscussView extends GetView<DiscussController> {
   const DiscussView({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,7 +23,7 @@ class DiscussView extends GetView<DiscussController> {
           style:
               GoogleFonts.poppins(fontSize: 18, fontWeight: FontWeight.w700),
         ),
-        centerTitle: false,
+        centerTitle: true,
       ),
       body: RefreshIndicator(
         onRefresh: () => controller.refreshData(),
